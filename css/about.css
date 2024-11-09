@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+ background-color: black;
+}
+
+
+
+nav{
+    background:linear-gradient(to right,#00C0FD,#E70FAA);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav img{
+    height: 60px;
+}
+
+.nav-text,.nav-text a{
+    color: white;
+    justify-content: space-evenly;
+}
+
+.section-about{
+    text-align: justify;
+    font-weight: 500;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px yellowgreen;
+    background:teal;
+}
+
+.section-work{
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px yellowgreen;
+    background-color: tan;
+}
+.section-E{
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px yellowgreen;
+    padding-bottom: 10px;
+    background:linear-gradient(to left,#00C0FD,#E70FAA);
+}
+.Hover{
+    transition: transform 1s ease;
+}
+.Hover:hover{
+    transform: scale(1.1);
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  .section-1, .section-2, .section-3 {
+    position: relative;
+    z-index: 1; /* Ensures sections stay above the video */
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    .Hover {
+        transition: transform 1s ease;
+    }
+    .Hover:active{
+        transform: scale(1.1);
+    }
+}

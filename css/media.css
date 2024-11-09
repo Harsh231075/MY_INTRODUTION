@@ -1,0 +1,33 @@
+@media  only screen and (min-width:200px) and (max-width:575px){
+    .section-1 h1{
+       font-size: 25px;
+       font-weight: 300;
+    }
+    .my-photo{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    nav img{
+        height: 50px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-collapse {
+        text-align: center;
+        background-color: #00C0FD; /* Background color of the navbar */
+        position: absolute;
+        top: 60px;
+        width: 30%;
+        left: 0;
+        z-index: 99;
+    }
+    /* When the menu is open, make the content not overlap */
+    .navbar-collapse.show {
+        display: block;
+    }
+
+  
+}   

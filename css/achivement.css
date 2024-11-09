@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative;
+ }
+
+
+ #bg-video {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+nav{
+    background:linear-gradient(to right,#00C0FD,#E70FAA);
+    height: 60px;
+    z-index: 10;
+}
+nav img{
+    height: 60px;
+}
+.nav-text,.nav-text a{
+    color: white;
+    justify-content: space-evenly;
+}
+
+.secection-1 img{
+    height: 200px;
+}
+
+
+
+
+.Hover{
+    transition: transform 1s ease;
+}
+.Hover:hover{
+    transform: scale(1.2);
+}
+
+
+@media  only screen and (min-width:200px) and (max-width:575px){
+   
+    nav img{
+        height: 50px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-collapse {
+        text-align: center;
+        background-color: #00C0FD; /* Background color of the navbar */
+        position: absolute;
+        top: 60px;
+        width: 30%;
+        left: 0;
+        z-index: 99;
+    }
+    /* When the menu is open, make the content not overlap */
+    .navbar-collapse.show {
+        display: block;
+    }
+
+  
+}   
+
